@@ -62,6 +62,22 @@ if(pets < allowedPets){
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
+if(typeof pets ==='number'&& typeof friendsPets === 'number'){
+    let mostPets;
+    if(pets > friendsPets){
+        mostPets = 'I have the most pets, which is '+ pets;
+        console.log(mostPets)
+    } else if( pets < friendsPets){
+        mostPets = 'My friend has the most pets, which is '+ friendsPets;
+        console.log(mostPets)
+    } else{
+        console.log('My friend and I have the same number of pets');
+    }
+} else{
+    console.log('please assign number to both variables.')
+}
+
+
 // 17 - Write a *switch* statement that logs:
 //      "First is the worst" if your lucky number is 1
 //      "Second is the best" if your lucky number is 2
